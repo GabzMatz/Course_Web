@@ -1,0 +1,32 @@
+#square{
+    width: 30vw;
+    height: 30vw;
+    background:linear-gradient(to bottom left,orange,rgb(0, 255, 51),yellow,white);
+    /*                        to, lado que eu quiser mandar, cores                     */
+
+}
+
+
+/* 
+
+cm = Centimetros
+mm = milimetros
+in = Polegadas == 1in => 96px ==> 2.54cm
+px = pixel ==> 1px
+existe (pt)pontos e (pc)picas
+*/
+
+#square2{
+    width: 50vw;
+    height: 20vh;
+    background-color: #f00;
+
+}
+
+.ft{
+width: 15%;
+height: 70%;
+
+}
+    /*  vw = usa o tamanho da tela indo de 0 a 100 largura */
+    /*  vh = usa o tamanho da tela indo de 0 a 100 altura */

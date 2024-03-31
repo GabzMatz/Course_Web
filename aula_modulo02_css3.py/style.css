@@ -1,0 +1,13 @@
+    /* em = usa o tamanho da antiga ===> uma vez maior*/
+    /* rem = usa o tamanho da antiga ===> duas vezes vez maior*/
+#container{
+
+    font-size:15px
+} 
+
+.texto{
+    font-size: 2em;
+
+
+}
+

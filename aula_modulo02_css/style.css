@@ -1,5 +1,10 @@
 #header{
-    color: blue;
+    color: white;
+    background-image: url(figmas_aula_backgronds/BackgroundImage.png);
+    background-size: contain;
+    background-repeat:no-repeat ;
+    background-position:right bottom ;
+    background-color: rgba(255, 0,0,0.5);
 }
 /*Assim se faz comentarios
 Algumas cores https://www.w3schools.com/cssref/css_colors.php
@@ -24,8 +29,31 @@ Pra fazer cores customizadas e so usar o rgb
 
 
 #Square{
-
-    width: 50px;
-    height: 50px;
+/*Estou forcando pelo tamanho*/
+    width: 300px;
+    height: 300px;
     background-color: #000;
+}
+
+#Square2{
+    width: 300px;                               /**/
+    height: 300px;
+    background-image:url("figmas_aula_backgronds/Ceramica.jpg") ;/*Passar um imagem como background*/
+    background-size:auto; /*Consido deixar a imagem como cover*/
+    background-repeat: no-repeat;/*Repete ou nao uma imagem*/
+    background-position: center;/*Consigo posicionar uma imagem onde eu quiser */
+
+
+}
+
+
+#skills{
+    background-image: url("figmas_aula_backgronds/Fundo_abstrato.jpg");
+    background-size: contain;
+    background-repeat:no-repeat ;
+    background-attachment: fixed;/*Consigo deixar o background fixo na tela ou descer junto com o scrool*/
+
+
+
+
 }
