@@ -1,0 +1,31 @@
+#header{
+    color: blue;
+}
+/*Assim se faz comentarios
+Algumas cores https://www.w3schools.com/cssref/css_colors.php
+Pra fazer cores customizadas e so usar o rgb
+
+
+
+
+        red, green, blue
+*/
+#objetico_formacao{
+    color:rgb(255, 100, 0);   /*Forma de rgb*/
+
+    background-color:#ffff00;   /*Forma de hexadecimal, ainda poder ser ff0*/
+
+}
+#experiencias{
+
+    background-color:rgb(255, 0, 0, 0.3);   /*Forma de rgba pode usar a
+    ultima opcao para controlar o alpha(Transparencia)*/
+}
+
+
+#Square{
+
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+}
