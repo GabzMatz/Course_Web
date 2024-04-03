@@ -1,0 +1,54 @@
+#square1{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-style:  solid;
+    border-width: 10px 10px 90px 10px;
+
+}
+#square2{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    border-width: 10px;
+    border-style:  solid;
+    border-color: rgb(0,0, 200);
+    border-radius: 50px 50px;
+}
+#square3{
+    width: 200px;
+    height: 200px;
+    border-width: 10px;
+    border-style:  dotted;
+    background-color: green;
+    border-color: red blue gray yellow ;
+}
+
+#square4{
+    width: 200px;
+    height: 200px;
+    border-width: 20x;
+    border-style:  solid;
+    background-color: purple;
+    border-color: black;
+    border-radius: 50px 20px;
+    border-width: 20px;
+}
+#circle{
+    width: 200px;
+    height: 200px;
+    border-style: none;
+    background-color: gold;
+    border-radius: 50%;
+
+}
+
+p{
+    border-style: dashed;
+    border-width: 10px;
+    border-color: blue;
+
+
+
+
+}

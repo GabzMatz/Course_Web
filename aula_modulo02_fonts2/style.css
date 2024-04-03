@@ -1,0 +1,36 @@
+#gog{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 3px black;
+    letter-spacing: 4px;
+    font-family: myfont2;
+
+}
+#text1{
+    font-family:"Jebrain mono";
+    font-style: italic;
+    font-size: 10px;
+    font-weight:normal; /*controle de expessura da fonte*/
+    font-variant: normal; 
+
+}
+
+
+
+#text2 {
+font-family: "myfont", sans-serif;  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url(fonts/Honk/static/Honk-Regular.ttf);
+}
+
+@font-face {
+    font-family: myfont2;
+    src: url(fonts/Protest_Strike/ProtestStrike-Regular.ttf);
+}

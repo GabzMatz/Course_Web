@@ -1,0 +1,35 @@
+.para{
+
+    text-transform: uppercase; /*decoracao de texto, posso deixar maiusculo etc..*/
+    text-decoration: underline;
+    text-align: justify;
+    line-height: 2em;
+
+
+}
+
+#gog{
+    text-decoration: none; 
+    text-transform: capitalize;
+    color: white; /*cor do texto*/
+    text-align: center;
+    letter-spacing: 30px;
+    line-height: 100px;
+    word-spacing: 1px;
+    text-indent: 20px;
+    text-shadow: 4px 2px 2px #000;
+    font-size:30px;
+    /*
+    line-height = espacamento dentro de uma linha para a de cima e de baixo
+    letter-spacing =espacamment de linha
+    word-spacing= espacamento de palavras;
+    text-indent: paragrafo
+    opcao de alinhamento
+    text_align ==
+    igual do word
+    center=meio
+    left=esqierda
+    right=direita
+    justify=preenche a tela inteira
+    */
+}
