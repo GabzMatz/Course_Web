@@ -1,0 +1,27 @@
+ul{
+    border: 1px solid gray;
+    list-style-position: inside;
+    padding: 0;
+}
+ol{
+    list-style: upper-alpha;
+    background-color: burlywood;
+    padding: 10px;
+    padding-left: 100px;
+    cursor:url("");
+
+}
+li{
+    padding: 10px;
+    margin: 10px;
+    background-color: blue;
+    width: 23vh;
+    border-radius: 10px;
+    cursor: pointer;
+   
+
+}
+body{
+    margin:0;
+    padding: 0;
+}

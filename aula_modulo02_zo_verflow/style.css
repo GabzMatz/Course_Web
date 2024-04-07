@@ -1,0 +1,14 @@
+#back{
+    height: 300px;
+    width: 300px;
+    background-color: #ccc;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /*
+    visible = opcao default
+    hidden = esconde tudo que esta dentro do elemento
+    auto = faz automatico
+    scroll = opcao de scrool    
+
+    */
+}

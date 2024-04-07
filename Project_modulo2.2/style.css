@@ -1,0 +1,68 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+#header{
+    background-color: #ff6b28;
+    padding: 10px;
+    text-align: center;
+}
+#imgbolo{
+    height: 400px;
+    width: 100%;
+    background-image:url(figmas/images/hero_bolo.jpg) ;
+    background-size: cover;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    color: #000
+    
+}
+#name_cake{
+    margin: 140px 0 150px 50px;
+    font-size: 45px;
+    color: #ff6b28;
+}
+.title{
+    font-size: 30px;
+    color: #ff6b28;
+    font-weight: bold;
+}
+.recipes{
+    font-weight: normal;
+    margin-top: 30px;
+    padding-left: 3vw;
+    font-size:20px;
+    color:black;
+}
+li{
+    margin: 2%;
+}
+.botao-compra{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #ff6b28;
+    padding: 0.8%;
+    border-radius: 15px;
+    
+}
+
+.padding-content{
+    margin-top: 100px;
+    font-size: 100%;
+    font-weight: bold;
+}
+
+#footer{
+    color: white;
+    padding: 20px;
+    background-color: #ff6b28;
+    font-size: 18px;
+    text-align: center;
+
+}

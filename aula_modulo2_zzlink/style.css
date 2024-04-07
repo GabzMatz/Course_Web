@@ -1,0 +1,26 @@
+a{
+    background-color: cornflowerblue;
+    color:beige;
+    text-decoration: none;
+    font-size: 100px;
+    font-family: "Jetbrains Mono";
+    border-radius: 20px;
+    padding: 50px;
+    text-align: center;
+}
+a:visited{
+    color: purple;
+
+
+}
+a:hover{
+    background-color: plum;
+    padding: 2vh;
+
+
+}
+a:active{
+    background-color: red;
+
+
+}
