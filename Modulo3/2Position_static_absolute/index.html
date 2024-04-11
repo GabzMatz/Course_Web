@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         #quadro1{
+            width: 800px;
+            height: 450px;
+            border: 1px solid black;
+         }
+        #quadro2{
+            width: 500px;
+            height: 450px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .quadrado{
+            width: 100px;
+            height: 100px;
+            
+        }
+        .red{
+            background-color: red;
+            position: relative;
+            top: 350px;
+        }
+        .green{
+            background-color: green;
+            position: relative;
+            left: 400px;
+            bottom:100px ;
+
+        }
+        .blue{
+            background-color: blue;
+            position: absolute;
+            left: 400px;
+          
+        }
+
+    </style>
+</head>
+<body>
+    <div id="quadro1">
+        <div id="quadro2">
+            <div class="quadrado red"></div>
+            <div class="quadrado green"></div>
+            <div class="quadrado blue"></div>
+        </div>
+    </div>
+</body>
+</html>
