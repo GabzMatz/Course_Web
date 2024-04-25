@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NewPhase</title>
+    <style>
+        .paragrafo{
+            color: red;
+
+        }
+
+        div{
+            display: inline;
+            background-color: rgb(77, 77, 169);
+            padding: 2em;
+
+        }
+
+    </style>
+    <script>
+        function loaded(){
+            var digit1 = 0
+            var h1 = document.getElementsByTagName("h1")[0]
+            var p = document.getElementsByTagName("p")[0]
+            h1.onclick = conta
+            
+
+            function conta(){
+                digit1++
+                p.innerHTML =digit1
+
+
+
+            }
+
+            // window.onload = function(){
+            //     let t = document.getElementsByTagName("h1")[0]
+            //     t.addEventListener("click",conta2)
+            // }
+
+        }
+    </script>
+
+</head>
+<body onload="loaded()"> 
+    <h1>texto</h1>
+    <p></p>
+
+</body>
+</html>

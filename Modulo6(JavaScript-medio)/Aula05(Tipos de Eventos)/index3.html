@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NewPhase</title>
+    <style>
+        .paragrafo{
+            color: red;
+
+        }
+
+        div{
+            display: inline;
+            background-color: rgb(77, 77, 169);
+            padding: 2em;
+
+        }
+
+    </style>
+    <script>
+            function printou(x){
+                console.log("teste")
+                console.log(x)
+                console.log(x.target)
+                console.log(this)
+
+            }
+
+            window.onload = function(){
+                 let t = document.getElementsByTagName("h1")[0]
+                 t.addEventListener("click",printou)
+             }
+
+
+    </script>
+
+</head>
+<body> 
+    <h1 if="todes">BOTAA</h1>
+
+</body>
+</html>

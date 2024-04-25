@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+            
+            // let d1 = document.getElementById("d1")
+            // console.log(d1)
+            // let h1 =d1.children[0]
+            // console.log(h1)
+            // console.log(h1.parentElement)
+            // console.log(document.body.children[0].children[0])            
+
+            let p = document.getElementsByTagName("p")
+
+            for(let i of p){
+                i.addEventListener("click",qop )
+                console.log(i)
+            }
+            function qop(){
+                console.log(this.parentElement)
+
+            }
+
+
+
+        }
+
+
+
+
+    </script>
+
+
+
+
+</head>
+<body>
+    
+    <div id="d1">
+        <h1>titulo qualquer 1</h1>
+        <p>texto qualquer 1</p>
+
+    </div>
+    
+    <div id="d2">
+        <h1>titulo qualquer 2</h1>
+        <p>texto qualquer 2</p>
+
+    </div>
+
+
+</body>
+</html>

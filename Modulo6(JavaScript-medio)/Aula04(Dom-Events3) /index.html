@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NewPhase</title>
+    <style>
+        .paragrafo{
+            color: red;
+
+        }
+
+        div{
+            display: inline;
+            background-color: rgb(77, 77, 169);
+            padding: 2em;
+
+        }
+
+    </style>
+    <script>
+
+        function loaded(){
+            let t = document.getElementById("titulo");
+            
+
+
+            //Mesma forma
+            // t.onclick = mudarText;
+            t.addEventListener("click", mudarText)
+            t.addEventListener("mouseout", mouseOut)
+
+        }
+
+        function mudarText(){
+            this.innerHTML = "New Title"
+        }
+
+        function mouseOut(){
+            this.innerHTML = "Mouse fora do elemento"
+
+
+
+        }
+
+    </script>
+
+</head>
+<body onload='loaded()'> 
+    <h1 id="titulo">texto</h1>
+
+</body>
+</html>
