@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        onload = function(){ 
+            let nome = localStorage.getItem("nome")
+            let h1 = document.getElementById("nome")
+            h1.innerHTML = nome
+
+
+
+        }
+
+        function att(x){
+            let valor = x.value
+            console.log(valor)
+
+            let h1 = document.getElementById("nome")
+            h1.innerHTML = valor
+            
+            window.localStorage.setItem("nome",valor);
+
+
+        }
+
+        //window.localStorage.setItem("nome","Joao");
+
+        //let n = window.localStorage.getItem("nome");
+        //console.log(n)
+
+        //window.localStorage.removeItem("nome");
+
+
+    </script>
+
+</head>
+<body>
+    <h1 id="nome"></h1>
+    <input type="text" oninput="att(this)">
+
+</body>
+</html>
