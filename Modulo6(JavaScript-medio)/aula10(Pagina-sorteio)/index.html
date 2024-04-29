@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let pessoas = ["Igor","Gabriel", "Joao","Mario"]
+
+
+        onload = function(){ 
+            let h1 =document.getElementsByTagName("h1")[0]
+
+                h1.innerHTML = "Vazio"
+        }
+
+
+        function sorteio(){
+
+
+            let np = pessoas.length;
+
+            let ns = Math.floor(Math.random() * np)
+
+            let h1 =document.getElementsByTagName("h1")[0]
+
+            h1.innerHTML = pessoas[ns];
+
+        }
+
+
+    </script>
+
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1></h1>
+
+    <button onclick="sorteio()">Sorteio</button>
+
+</body>
+</html>
