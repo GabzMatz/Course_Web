@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(3, 18, 3);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.circle{
+    width: 15rem;
+    height: 15rem;
+    background-color: greenyellow;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.circle img{
+    margin-right: 1rem;
+    width: 8rem;     
+    height: 8rem;
+}
+.subir button{
+    font-size: 3rem ;
+    background: none;
+    border: none;
+    margin-bottom: 1rem;
+}
+.subir button:hover{
+    cursor: pointer;
+    font-size: 3.4rem ;
+
+
+}
+#hub-control{
+    display: none;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+
+}
+.icons-control{
+    padding: 0.5rem;
+    margin: 0 1rem;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    width: 5rem;
+}
+.icons-control:hover{
+    width: 4rem ;
+    cursor: pointer;
+    background-color: gray;
+}

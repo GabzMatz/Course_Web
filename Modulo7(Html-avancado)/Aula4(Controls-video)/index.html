@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        }
+
+        .containter{
+            position: relative;
+            width: 640px;
+            height: 360px;
+        }
+        .video{
+            width: 100%;
+        }
+        .controle{
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+
+        }
+        .real{
+            display: flex;
+            justify-content: space-around;
+            align-items: end;
+            height: 100%;
+        }
+        .color-hud{
+            position: absolute; 
+            bottom: 0;
+            background-color: rgba(128, 128, 128, 0.565);
+            width: 100%;
+            height: 10%;
+
+        }
+
+
+        .btn{
+           width: 2rem;
+    
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Teste de player<h1>
+    <div class="containter">
+
+
+
+        <video id="video1" class="video" width="800rem" src="video/Politics in 20 Seconds.mp4">
+        </video>
+
+        <div id="fullcontrol">
+            <div class="color-hud"></div>
+
+            <div class="controle">
+                <div class="real">
+                        <button class="btn" onclick="slow()">-</button>
+                        <img class="btn" onclick="retrocerder()" src="icons-control/bolta.png">
+                        <img class="btn" onclick="avancar()" src="icons-control/fast.png">
+                        <img class="btn" onclick="play()" src="icons-control/play.png">
+                        <img class="btn" onclick="pause()"  src="icons-control/pause.png">
+                        <img class="btn" onclick="stopped()" src="icons-control/stooped.png">
+                        <button class="btn" onclick="fast()">+</button>
+                </div>
+            </div> 
+        </div>
+
+    </div>
+
+
+
+    <script src="sript.js"></script>
+</body>
+</html>
