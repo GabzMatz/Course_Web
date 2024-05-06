@@ -21,21 +21,20 @@
         <div class="layout">
             <div class="logo">
                 <a style="display: flex;" class="nav-itens-links" href="#"><span class="emojione-v1--shortcake"></span>            
-                <p>WorldCake</p></a>
+                <p >WorldCake</p></a>
             </div>
             <div class="nav-itens">
                 <a class="nav-itens-links"href="#">Home</a>
                 <a class="nav-itens-links"href="#">New's Cakes</a>
                 <a class="nav-itens-links"href="#">TwoLayers</a>
                 <a class="nav-itens-links"href="#">Clasic's Cakes</a>
-                <a class="nav-itens-links"href="#">About</a>
             </div>
             <div style="display: flex; align-items: center;">
-                <div style="margin-right: 3rem;">
+                <div class="queries_noneTablet" style="margin-right: 3rem;">
                     <a class="nav-itens-links" href="tell:+5511975778909">11975778909</a>
                     <p class="color-red"">Ligue pra gente!</p>
                 </div>
-                <p class="button-tel">Entre em contato</p>
+                <p class="button-tel queries_noneSmart">Entre em contato</p>
             </div>
 
         </div>
@@ -44,9 +43,11 @@
         <div class="front">
             <div class="container">
                 <h1>Venha experimentar!</h1>
-                <h3>Selo Cakeboss ✅</h3>
-                <p style="margin-bottom: 1rem;">Venha conhecer nossa loja para experimentar todos os tipos de bolo</p>
-                <input style="max-width: 15vw;" class="button-tel" class="button-loja" type="button" value="Nossa Loja!"></input>
+                <div class="hate">
+                    <h3>Selo Cakeboss ✅</h3>
+                    <p style="margin-bottom: 1rem;">Venha conhecer nossa loja para experimentar todos os tipos de bolo</p>
+                    <input class="button-tel" class="button-loja" type="button" value="Nossa Loja!"></input>
+                </div>
             </div>
             <div class="img-cake">
                 <img src="figmas/c7a79a4c-150a-47c1-8b5b-0026c542a18a-removebg-preview.png" alt="bolo">
@@ -60,7 +61,7 @@
             </div>
             <div class="carrousel-itens">
                 <span class="lets-icons--calories carrousel-img"></span>
-                <p>Versao com menos calorias</p>
+                <p>Menos calorias</p>
             </div>
             <div class="carrousel-itens carrousel-img">
                 <span class="mdi--gluten-free"></span>
@@ -71,35 +72,35 @@
         <div class="bolos">
             <div class="opcoes_dos_bolos">
                 <div class="img_bolo">
-                    <img src="figmas/BCenoura.png">
+                    <img class="realcake" src="figmas/BCenoura.png">
                 </div>
                 <p>Bolo de cenoura</p>
                 <p>R$10,00</p>
-                <button style="margin-right: 0;" class="button-tel">Comprar</button>
+                <button style="margin-right: 0;" class="button-tel comprar">Comprar</button>
 
             </div>
             <div class="opcoes_dos_bolos">
                 <div class="img_bolo">
-                    <img src="figmas/30564e77-7885-4617-9d47-804f220a6f63-removebg-preview.png">
+                    <img class="realcake" src="figmas/30564e77-7885-4617-9d47-804f220a6f63-removebg-preview.png">
                 </div>
                 <p>Bolo de brigadeiro</p>
                 <p>R$40,00</p>
 
-                <button style="margin-right: 0;" class="button-tel">Comprar</button>
+                <button style="margin-right: 0;" class="button-tel comprar">Comprar</button>
 
             </div>
             <div class="opcoes_dos_bolos">
                 <div class="img_bolo">
-                    <img src="figmas/c7a79a4c-150a-47c1-8b5b-0026c542a18a-removebg-preview.png">
+                    <img class="realcake" src="figmas/c7a79a4c-150a-47c1-8b5b-0026c542a18a-removebg-preview.png">
 
                 </div>
                 <p>Bolo de morango</p>
                 <p>R$40,00</p>
-                <button style="margin-right: 0;" class="button-tel">Comprar</button>
+                <button style="margin-right: 0;" class="button-tel comprar">Comprar</button>
             </div>
         </div>
         <br><br>
-        <div class="flex">
+        <div class="flex" id="fixed">
             <div class="bottle-cake"> 
                 <img src="figmas/11373252-removebg-preview.png">
             </div>
@@ -121,8 +122,8 @@
 
         <div class="inventando_moda">
             <div class="moda1">
-                <p>criador</p>
-                
+                <p>Criador:</p>
+                <video width="100%" loop muted autoplay src="videos/2024-05-05-200756.webm"></video>
             </div>
             <div class="moda2">
                 <div class="text-center">  
@@ -165,33 +166,45 @@
             </div>
         </div>
 
-        <div>
-            <div>
+        <div id="roulet">
+            <div class="roletclas">
                 <strong>Institucional</strong>
-                
-                <p>Sobre a WALLS</p>
+                <p>Sobre a WorldCake</p>
                 <p>Como comprar</p>
                 <p>Seguranca</p>
                 <p>Políticas de envio</p>
                 <p>Formas de Pagamento</p>
                 <p>Troca e Devolução</p>
-                <p>Depoimentos de Clientes</p>
-                <p>Fale Conosco</p>                            
+                <p>Depoimentos de Clientes</p>                           
             </div>
                                    
-            <div>
-                <p>Fale conosco
-                (15) 3346-5004
-                (15) 99190-3413
-                sac@wallsgeneralstore.com.br
-                Horários de atendimento de segunda a sexta das 09h às 18h
+            <div class="roletclas">
+                <strong>Fale conosco</strong>
+                <p>(11) 4784-6387</p>
+                <p>(1) 99734-8827</p>
+                <p>cakeworlds@centerstore.com</p>
+                <p>Horários de atendimento de segunda a sexta das 09h às 18h</p>
             </div>
 
+            <div class="roletclas">
+                <strong>Nossa redes:</strong>
+                <div id="roletfottos">
+                    <img style="width: 4.7rem;" src="figmas/face.png">
+                    <img src="figmas/insta.png">
+                    <img style="width: 3.7rem; margin-bottom: 0.2rem; margin-left: 0.5rem;" src="figmas/youtube.png">
+                </div>
+            </div>
+            <div class="roletclas iframed" >
+                <iframe width="400" height="200" src="https://www.youtube.com/embed/mDCxGZhymqM?si=WY88gblOrmPRzrTJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+            </div>
         </div>
 
         
     </footer>
 
-
+    <script src="script.js"></script>
 </body>
 </html>

@@ -78,6 +78,15 @@ main{
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
+}
+
+.opcoes_dos_bolos:hover{
+    width: 25rem;
+    height: 36rem;
+    background-color: rgba(163, 40, 40, 0.428) ;
+
+
 }
 .opcoes_dos_bolos button{
     margin-top: 1rem;
@@ -149,10 +158,12 @@ main{
 }
 .moda1{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color:white;
     width: 40rem;
+    height: auto;
     background-color: black;
 }
 
@@ -161,9 +172,14 @@ main{
     display: flex;
     flex-direction: row;
 
+}
+.comprar{
+    font-size: 2rem;
+    padding: 1rem;
+
+
 
 }
-
 .container-list h1{
     margin-top: 5rem;
     color: rgb(163, 40, 40) ;
@@ -184,6 +200,19 @@ main{
 
 
 }
+.option-cakes::before{
+    content: "";
+    width: 1rem;
+    display: inline-block;
+    height: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(figmas/seta.png);
+    margin-right: 1rem;
+
+}
+
 .bottle-cake{
     display: flex;
     width: 30rem;
@@ -232,6 +261,8 @@ main{
 
 
 }
+
+
 .flex2{
     text-align: center;
     display: flex;
@@ -240,6 +271,7 @@ main{
 }
 
 .bolos{
+    height: 32rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -250,7 +282,6 @@ main{
     flex-direction: column;
     text-align: center;
     margin-top: 3rem;
-    border: 1px solid black;
     padding: 2rem;
     text-transform: uppercase;
     font-size: 3rem;
@@ -266,7 +297,6 @@ footer{
     margin-top: 2rem;
     background-color: bisque;
     border: 1px solid black ;
-    height: 80vh;
 }
 
 #search{
@@ -288,6 +318,7 @@ footer{
     padding: 0.5rem;
     border: 0;
     background-color: bisque;
+    cursor: pointer;
 
 }
 .pass:hover{
@@ -297,6 +328,125 @@ footer{
 
 
 }
+
+#roulet{
+    display: flex;
+    flex-direction: row;
+    font-size: 1em;
+    padding: 2rem 3rem ;
+    justify-content: center;
+}
+
+.roletclas{
+    width: 100vw;
+    height: 25vh;
+    margin: 1rem;
+}
+.roletclas strong{
+    display: block;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+
+}
+
+#roletfottos{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+#roletfottos img{
+    width: 5.1rem;
+    height: 100%;
+
+}
+.iframed{
+    overflow: hidden;
+
+}
+
+
+
+
+@media screen and (max-width: 1127px){
+
+    .queries_noneTablet{
+        display: none;
+    
+    }
+}
+@media screen and (max-width: 950px){
+
+    .queries_noneSmart{
+        display: none;
+    
+    }
+    .layout{
+        display: flex;
+        flex-direction:column ;
+        border: 0;
+    }
+
+    .nav-itens{
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+    .front{
+        display:flex;
+        flex-direction: row;
+    }
+    .container{
+        margin: 0;
+        width:100%;
+    }
+    .container h1{
+        text-align: center;
+        font-size: 2.3rem;
+
+    }
+    .img-cake{
+        display: none;
+    }
+
+    .hate{
+        text-align: center;
+        width: 100vw;
+
+    }
+    .button-tel{
+        margin: 0;
+        margin-bottom: 2rem;
+
+    }
+    .carrousel-itens{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+}
+/* @media screen and (max-width: 950px){
+
+        .queries_none{
+            display: none;
+        
+        }
+
+
+ */
+
+
+
+
+
+
+
+
 
 
 

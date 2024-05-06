@@ -1,0 +1,19 @@
+div{
+    background-color: green;
+}
+
+*{
+
+margin: 0;
+padding: 0;
+}
+/*Sao coisas diferntes
+*/
+header > p{
+    background-color: red;
+
+}
+/* header p{
+    background-color: red;
+
+} */

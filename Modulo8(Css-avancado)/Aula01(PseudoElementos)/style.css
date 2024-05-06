@@ -1,0 +1,29 @@
+p::first-letter{
+    font-size: 5rem;
+}
+
+p::first-line{
+    color: blue;
+}
+
+li{
+    list-style: none;
+}
+
+li::before{
+    margin-right: 20px;
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    background-image:url(figmas/cpm-braxis.jpg);
+}
+
+p::selection{
+    background-color: yellow;
+
+
+}

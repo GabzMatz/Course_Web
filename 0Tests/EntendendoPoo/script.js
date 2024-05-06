@@ -6,7 +6,7 @@
 //     correr:function(){
 //         console.log("Vruuummmmm")
         
-        
+                
 //     }
     
 // }
@@ -20,7 +20,7 @@
         
         
 //     }
-    
+
 // }
 class CorredoresF1{
     constructor(n,i,e){
