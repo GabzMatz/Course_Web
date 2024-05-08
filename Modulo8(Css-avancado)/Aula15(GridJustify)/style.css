@@ -1,0 +1,27 @@
+.container{
+    height: 400px;
+    color: white;
+    display: grid;
+    background-color: purple;
+    grid-template: 100px 100px / auto auto auto;
+    grid-gap:10px;
+    align-content: center;
+    justify-items: center;
+}
+.r1{
+background-color: red;
+
+}
+.r2{
+    background-color: blue;
+    
+}
+.r3{
+background-color: green;
+
+}
+
+.react{
+    height: 100px;
+    width: 100px;
+}

@@ -1,0 +1,55 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+li{
+    text-align: center;
+    font-size: 1.5rem;
+    list-style: none;
+}
+input:focus{
+    color:red
+}
+
+/* Primeiro dentro do elemento 
+li:first-child{
+    color:green;
+}
+/* Primeiro do seu tipo
+li:first-of-type{
+    color:green;
+}
+
+li:nth-child(2){
+    color:red
+}
+li:nth-last-child(2){
+    color:gray
+}
+li:last-child{
+    color: purple;
+}
+
+*/
+
+Da pra fazer uma lista colorida assim
+
+li:nth-of-type(even){
+    color: black;
+    background-color:beige;
+
+}
+
+li:nth-of-type(odd){
+    color: white;
+    background-color:gray;
+
+
+}
+
+
+
+

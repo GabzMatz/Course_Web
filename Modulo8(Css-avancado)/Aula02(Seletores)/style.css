@@ -7,13 +7,52 @@ div{
 margin: 0;
 padding: 0;
 }
+
+
+
 /*Sao coisas diferntes
+Esse pega todos os p dentro do header
 */
 header > p{
     background-color: red;
 
 }
-/* header p{
+/*
+/*Sao coisas diferntes
+Esse pega todos os p dentro do header
+porem ainda pega dentro de outros tags exemplo header => section => p
+header p{
     background-color: red;
 
 } */
+
+
+
+/*
+pega o proximo p dps de header
+header + p{
+    background-color: red;
+
+} */
+/*
+
+
+pega TODOS  proximo p dps de header
+header ~ p{
+    background-color: red;
+
+} */
+
+
+
+
+[title*]{
+    background-color: red;
+
+}
+/*
+~ == pega a palavra
+^ == pega a letra  
+* == pega tudo
+$ == pega o final 
+ */

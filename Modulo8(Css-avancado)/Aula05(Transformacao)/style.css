@@ -1,0 +1,14 @@
+img{
+    width: 20rem;
+    transform: scale(2, 1);  /* Recebe x e y ou dois juntos */
+    transform: skew(30deg) /*Consegue inclinar as fts, */
+}
+
+
+div{
+    text-align: center;
+    transform: skew(30deg);
+    background-color: beige;
+    width: 20rem;
+    height: 6rem;
+}
