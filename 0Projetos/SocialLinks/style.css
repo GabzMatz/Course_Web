@@ -13,27 +13,90 @@ body{
 }
 main{
     height: 100vh;
-    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
+    width: 20rem;
 
 }
 header{
-    margin-top: 5rem;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     text-align: left;
+    width: 19rem;
     
 }
+header h1{
+    font-weight: 500;
+
+
+}
 header p{
+    margin-top: 1rem;
     color:#919193;
     font-size: 0.8rem;
 }
 
 header img{
-    width: 8rem;
+    width: 6rem;
     background:linear-gradient(to top right, #5578BA,#40a376);
-    height: 8rem;
     border-radius: 50%;
     margin-top: 1rem;
+    margin-bottom: 0.8rem;
 }
  
+.container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template: auto auto auto /auto auto auto auto;
+/* linha coluna */
+    grid-gap: 0.8rem;
+    width: 100%;
+}
+
+
+.insta{
+    grid-column-start: 1;
+    grid-column-end: 5;
+
+
+}
+.yt{
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.tik{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    margin-bottom:0.4rem ;
+}
+
+
+.but{
+    height: 3.4rem;
+    width: 100%;
+    border-style:none ;
+    border-radius: 50px;
+    background:linear-gradient(to top right, #5578BA,#40a376);
+    text-align: start;
+    padding-left:2rem; 
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.other{
+    display: flex;
+
+}
+
+.but2{
+    margin: 0 1rem;
+    height: 1rem;
+}
+
+
+.but, .but2{
+    cursor: pointer;
+}
