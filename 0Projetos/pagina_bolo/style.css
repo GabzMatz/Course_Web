@@ -10,9 +10,9 @@ html ,body, p{
     justify-content: space-between;
     align-items: center;
     background-color: bisque;
-    border: 1px solid black ;
-}
 
+    border-bottom: 1px solid black;   
+}
 .logo{
     display: flex;
     padding: 1rem;
@@ -57,10 +57,7 @@ html ,body, p{
     color: white;
     cursor: pointer;
 }
-main{
-        overflow: hidden;
 
-}
 .img-cake img{
     overflow: hidden;
     height: 40rem;
@@ -296,7 +293,7 @@ main{
 footer{
     margin-top: 2rem;
     background-color: bisque;
-    border: 1px solid black ;
+    border-top: 1px solid black ;
 }
 
 #search{
@@ -339,7 +336,6 @@ footer{
 
 .roletclas{
     width: 100vw;
-    height: 25vh;
     margin: 1rem;
 }
 .roletclas strong{
@@ -367,7 +363,6 @@ footer{
 
 
 
-
 @media screen and (max-width: 1127px){
 
     .queries_noneTablet{
@@ -376,7 +371,86 @@ footer{
     }
 }
 @media screen and (max-width: 950px){
+    .hidden{
+        overflow: hidden;
 
+    }
+    main{
+        overflow: hidden;
+
+    }
+    #search{
+        text-align: center;
+    }
+    .bar_search{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+        align-items: center;   
+        margin: 2rem 0;
+        transform: scale(1.2);
+    }
+
+
+    .bar_search .email{
+        margin:0;
+        border-top-left-radius: 2rem;
+        border-bottom-left-radius: 2rem;
+        border: 2px solid black;
+        border-width: 2px 0 2px 2px
+    }
+    .bar_search .pass{
+        background-color: white;
+        border-top-right-radius: 2rem;
+        border-bottom-right-radius: 2rem;        
+        border: 2px solid black;
+
+    }
+    .bolos{
+        overflow: hidden;
+    }
+    .inventando_moda{
+        flex-direction: column;
+    }
+    .moda1{
+        width: 20rem;
+
+
+    }
+    .bottle-cake2 img{
+        max-width:13rem;
+        height: auto;
+    }
+    .text-center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-center p{
+       width: 90vw;
+    }
+ 
+    .flex2{
+        transform: scale(0.8);
+    }
+
+    .roletclas{
+        margin: 0 0;
+
+    }
+    #roulet{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    #roletfottos{
+        display: flex;
+        justify-content: center;
+    }
     .queries_noneSmart{
         display: none;
     
@@ -384,7 +458,6 @@ footer{
     .layout{
         display: flex;
         flex-direction:column ;
-        border: 0;
     }
 
     .nav-itens{
@@ -393,7 +466,6 @@ footer{
         flex-direction: row;
         text-align: center;
         align-items: center;
-        border-bottom: 1px solid black;
     }
     .front{
         display:flex;
@@ -401,7 +473,9 @@ footer{
     }
     .container{
         margin: 0;
-        width:100%;
+        max-width: 100%;
+        justify-content: center;
+        
     }
     .container h1{
         text-align: center;
@@ -430,15 +504,14 @@ footer{
     }
 
 }
-/* @media screen and (max-width: 950px){
-
-        .queries_none{
-            display: none;
-        
+@media screen and (max-width: 1120px){
+        .inventando_moda{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
-
- */
+    }
 
 
 
