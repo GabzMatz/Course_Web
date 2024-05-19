@@ -15,7 +15,7 @@ let alunos = [
 //     return {aluno.nome + "tem" +aluno.idade + "anos"}
 
 // }
-function alunodaqa5anoos(aluno){
+function alunodaqa5anos(aluno){
     return {
         nome: aluno.nome,
         idade :aluno.idade + 5,
@@ -24,5 +24,5 @@ function alunodaqa5anoos(aluno){
 }
 
 
-console.log(alunos.map(alunodaqa5anoos))
+console.log(alunos.map(alunodaqa5anos))
 console.log(alunos)
