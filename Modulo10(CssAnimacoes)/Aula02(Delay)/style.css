@@ -1,0 +1,22 @@
+@keyframes changeColor{
+/* 
+        from{
+            background-color: red;
+        }
+        to{
+            background-color: blue;
+        } */
+        0%{background-color: red;}
+        50%{background-color: green;width: 600px;}
+        70%{background-color: yellow;width: 200px;}
+        100%{background-color: blue;}
+
+}
+.box{
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    animation-name: changeColor;
+    animation-duration: 2s;
+    animation-delay:1s ;
+}

@@ -1,0 +1,35 @@
+@keyframes move{
+    0%{left: 0px;}
+    100%{left: 300px;}
+
+}
+@keyframes changeColor{
+            0%{background-color: red;}
+            50%{background-color: green;width: 600px;}
+            100%{background-color: blue;}
+}
+.box{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    border-style: solid;
+    animation: move 2s linear 1s 1 normal forwards;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.div1{
+    animation-timing-function: linear;
+}
+.div2{
+    animation-timing-function: ease;
+}
+.div3{
+    animation-timing-function: ease-in;
+}
+.div4{
+    animation-timing-function:ease-out ;
+}
+.div5{
+    animation-timing-function: ease-in-out;
+}

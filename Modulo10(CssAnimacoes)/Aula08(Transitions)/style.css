@@ -1,0 +1,21 @@
+.btn{
+    display: inline-block;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    background-color: blue;
+    text-align: center;
+
+    /* transition-property:  background-color, padding;
+    transition-delay: 200ms, 600ms;
+    transition-duration: 200ms; */
+
+    transition: background-color 100ms, padding 500ms;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: red;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
