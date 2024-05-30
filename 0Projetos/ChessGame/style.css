@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.board{
+    display: grid;
+    grid-template:auto auto auto auto auto auto auto auto 
+    / auto auto auto auto auto auto auto auto ;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+}
+.board *{
+    border: 2px solid black;
+    width: 4rem;
+    height: 4rem;
+}
+
+.board .black{
+    background-color: black;
+}
+
+.item{
+    width: 100%
+}
+.item *{
+    user-select: none;
+    border: none;
+    cursor: pointer;
+}

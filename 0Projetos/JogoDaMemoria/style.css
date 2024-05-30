@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
 }
 body{
     height: 100vh;
@@ -16,7 +17,7 @@ body{
     position: relative;
     width: 150px;
     height: 150px;
-
+    cursor: pointer;
     transform-style: preserve-3d;
     transition: transform .5s;
 }
@@ -51,6 +52,7 @@ body{
     font-weight: 900;
     font-size: 30px;
     background-color: #05c3ff;
+
 
 }
 
