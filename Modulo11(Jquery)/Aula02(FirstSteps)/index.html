@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Texto</h1>
+    <h1 class="title">Outro Texto</h1>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        // forma de usar sem $
+        // $.noConflict()
+        // console.log(jQuery("h1"))
+
+
+        // console.log($("h1"))
+        // $("h1").hide()
+
+        // setTimeout(()=>{
+        //     $(".title").show()
+
+        // },2000)
+
+        setTimeout(()=>{
+            
+            document.querySelectorAll(".title").forEach(element=>{
+                element.style.display = "none"
+            })
+
+        },2000)
+
+
+
+
+    </script>
+</body>
+</html>

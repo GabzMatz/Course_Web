@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #square{
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            display: none;
+        }
+        #green{
+            width: 300px;
+            height: 300px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Look this</h1>
+    <button id="button">Fade in</button>
+    <button id="otherButton">Look</button>
+    <button id="stop">Stop</button>
+
+    <div id="square"></div>
+    <div id="green"></div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        function callBack(){
+            console.log("Green Escondido")
+            $("#square").show(2000)
+        }
+
+        // $("#button").click(()=>{
+        //     $("#green").hide(2000, callBack)
+        // })
+
+        $("#button").click(()=>{
+            $("#green").hide(2000, callBack).show(3000)
+        })
+      
+
+    </script>
+       
+</body>
+</html>

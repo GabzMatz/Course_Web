@@ -18,8 +18,8 @@
     border-style: solid;
     animation-name: changeColor;
     animation-duration: 1s;
-    animation-delay: 1;
-    animation-fill-mode: both;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
     /*a both faz os ambos */
     /* animation-fill-mode: backwards; 
     comeca no primeiro pixel

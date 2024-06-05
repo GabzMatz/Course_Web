@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="myDiv" data-name="Gabriel"></div>
+    <script type="text/javascript">
+
+        const myDIv = document.querySelector("#myDiv")
+
+
+        for(let i = 0; i < 4; i++){ 
+
+            myDIv.dataset.startedCode = i
+            console.log(myDIv.dataset)
+            console.log(myDIv.dataset.startedCode)
+        }
+
+    </script>
+</body>
+</html>

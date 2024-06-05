@@ -34,17 +34,17 @@ createPieces("ChessPieces/kingWhite.png",0,0,60)
 function createPieces(type,x,y,z){
 
     let childrens = document.querySelectorAll(".item")
-
     for(let i = 0; i < childrens.length; i++){
+        let piece = document.createElement("img")
         if(i > x && i < y){
-            let piece = document.createElement("img")
             piece.setAttribute("src", type)
             childrens[i].appendChild(piece)
+            piece.dataset.chess = type
         }
         else if(z == i){
-            let piece = document.createElement("img")
             piece.setAttribute("src", type)
             childrens[i].appendChild(piece)
+            piece.dataset.chess = type
         }
     }
 }
