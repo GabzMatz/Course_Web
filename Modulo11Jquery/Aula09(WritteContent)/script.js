@@ -18,3 +18,6 @@ console.log($("input"))
 console.log($("li").attr("nome", function(i, o){
     return i
 }))
+
+
+$("#button2").attr("maxlength",4).attr("type","password")

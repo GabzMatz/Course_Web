@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>       
+</head>
+<body>
+    <div>
+        <div id="div1">div 1</div>
+        <div id="div2">div 2</div>
+        <div id="div3">div 3</div>
+        <div id="div4">div 4</div>
+        <div id="div5">div 5</div>
+    </div>
+    <div>
+        <div id="div1">div 6</div>
+        <div id="div2">div 7</div>
+        <div id="div3">div 8</div>
+        <div id="div4">div 9</div>
+        <div id="div5">div 10</div>
+    </div>
+    <script>
+        let selected = $("#div3").siblings() //Pega todos menos a div 3
+        let selected2 = $("#div3").siblings("#div4") //Pega so a div 4
+
+        let selected3 = $("#div3").nextAll() //Pega todo que estao a baixo
+        // nextAll da pra colocar argumento ainda
+        
+        let selected4 = $("#div3").next() //Pega o proximo
+
+        let selected5 = $("#div3").prevAll() //Pega os anteriores
+
+        let selected6 = $("#div1").nextUntil("#div5")//Pega ate o elemento digitado
+        //tem o prevUntill funciona igual
+
+
+    </script>
+
+
+
+</body>
+</html>

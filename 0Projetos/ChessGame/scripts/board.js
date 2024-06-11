@@ -1,5 +1,20 @@
 let board = document.querySelector(".board")
+board.setAttribute("Player", "black")
 
+let whites = ["ChessPieces/PeaoWhite.png",
+            "ChessPieces/TowerWhite.png",
+            "ChessPieces/HorseWhite.png",
+            "ChessPieces/BispoWhite.png",
+            "ChessPieces/QueenWhite.png",
+            "ChessPieces/kingWhite.png"]
+            
+let blacks = ["ChessPieces/PeaoBlack.png",
+            "ChessPieces/TowerBlack.png",
+            "ChessPieces/HorseBlack.png",
+            "ChessPieces/BispoBlack.png",
+            "ChessPieces/QueenBlack.png",
+            "ChessPieces/KingBlack.png"
+]
 
 rowChess(false)
 rowChess(true)

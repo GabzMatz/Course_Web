@@ -1,0 +1,11 @@
+.item{
+    color: white;
+    background-color: red;
+    margin: 10px 0;
+    padding: 2rem;
+    list-style: none;
+    font-size: 2rem;
+}
+#lista1{
+    margin-bottom: 3rem;
+}

@@ -31,20 +31,33 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script>
-
-        function callBack(){
-            console.log("Green Escondido")
-            $("#square").show(2000)
-        }
-
-        // $("#button").click(()=>{
-        //     $("#green").hide(2000, callBack)
-        // })
+        console.log($)
 
         $("#button").click(()=>{
-            $("#green").hide(2000, callBack).show(3000)
+            //Tem slot, fast tbm
+            // $("#square").fadeIn(1000)
+            // $("#square").fadeIn("slow")
+
+            
+
+            //Aqui consiga trocar os fadesf
+            // $("#square").fadeToggle()
+            // $("#square").fadeTo(1000, 0.3)
+
+
+            //Animacao Movimentacao
+            // $("#square").slideDown()
+            $("#square").slideToggle()
         })
-      
+        $("#otherButton").click(()=>{
+            $("#green").animate({width: 500},2000)
+
+        })
+        $("#stop").click(()=>{
+            $("#green").stop()
+
+        })
+
 
     </script>
        
