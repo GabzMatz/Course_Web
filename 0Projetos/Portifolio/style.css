@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;;
+    height: 12vh;
+}
+header h2{
+    font-family: "Open Sans", sans-serif;
+    background-image: linear-gradient(to right, #6b239b, #9563b7);
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+    margin-right: 10vw;
+    letter-spacing: -3px;
+}
+
+nav ul{
+    cursor: pointer;
+    margin: 0;
+    gap: 1.8rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+nav ul li{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#black-or-white{
+    cursor: pointer;
+    border: 2px solid white;
+    position: relative;
+    width: 2.8rem;
+    background-color: gray;
+    height: 1.5rem;
+    border-radius: 2rem;
+}
+#black-or-white #light{
+    position: absolute;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    background-color: black;
+}
+#black-or-white #black{
+    display: none;
+    left: 50%;
+    position: absolute;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.containerBasicImg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 37vh;
+    background-image: url(images/anas-alshanti-feXpdV001o4-unsplash.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.containerBasic{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    font-weight: 600;    
+}
+.containerBasic p{
+    font-weight: 100;    
+}
+.img-social{
+    height: 2.4rem;
+    width: 14vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.img-social a *{
+    height: 100%;
+    border-radius: 0.5em;
+    background-color: white;
+
+
+}
