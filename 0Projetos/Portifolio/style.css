@@ -13,9 +13,9 @@ header{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
+    background-color: rgb(15, 10, 15);
     color: white;;
-    height: 12vh;
+    height: 4rem;
 }
 header h2{
     font-family: "Open Sans", sans-serif;
@@ -40,6 +40,8 @@ nav ul li{
     font-weight: 600;
     text-transform: uppercase;
 }
+
+
 #black-or-white{
     cursor: pointer;
     border: 2px solid white;
@@ -49,21 +51,34 @@ nav ul li{
     height: 1.5rem;
     border-radius: 2rem;
 }
-#black-or-white #light{
-    position: absolute;
-    height: 1.25rem;
-    width: 1.25rem;
-    border-radius: 50%;
-    background-color: black;
+@keyframes selectColorWhite {
+    0%{
+        left: 0%;
+
+    }
+    100%{
+        left: 50%;
+        background-color: white;
+    }
 }
-#black-or-white #black{
-    display: none;
-    left: 50%;
+@keyframes selectColorBlack {
+    0%{
+        left: 50%;
+    }
+    100%{
+        left: 0;
+        background-color: black;
+    }
+}
+
+#black-or-white #seletor{
     position: absolute;
     height: 1.25rem;
     width: 1.25rem;
     border-radius: 50%;
-    background-color: white;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    background-color: black;
 }
 
 .containerBasicImg{
@@ -72,7 +87,7 @@ nav ul li{
     align-items: center;
     justify-content: center;
     color: white;
-    height: 37vh;
+    height: 17rem;
     background-image: url(images/anas-alshanti-feXpdV001o4-unsplash.jpg);
     background-position: top;
     background-size: cover;
@@ -100,4 +115,19 @@ nav ul li{
     background-color: white;
 
 
+}
+
+#containerAbout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(15, 10, 15);
+}
+
+.option{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
