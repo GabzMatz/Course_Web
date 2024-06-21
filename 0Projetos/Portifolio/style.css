@@ -1,32 +1,21 @@
+:root, [data-bs-theme="light"] {
+    --bs-dark-rgb:27,12,26;
+}
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-}
-
-header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(15, 10, 15);
-    color: white;;
-    height: 4rem;
-}
 header h2{
     font-family: "Open Sans", sans-serif;
-    background-image: linear-gradient(to right, #6b239b, #9563b7);
+    background-image: linear-gradient(to right, #6d2d6a, #512250);
     background-clip: text;
     color: transparent;
     font-weight: 700;
     margin-right: 10vw;
     letter-spacing: -3px;
 }
-
 nav ul{
     cursor: pointer;
     margin: 0;
@@ -81,53 +70,37 @@ nav ul li{
     background-color: black;
 }
 
-.containerBasicImg{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    height: 17rem;
+body{
     background-image: url(images/anas-alshanti-feXpdV001o4-unsplash.jpg);
-    background-position: top;
+    background-position: center;
     background-size: cover;
 }
 .containerBasic{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
     font-weight: 600;    
 }
 .containerBasic p{
     font-weight: 100;    
 }
 .img-social{
-    height: 2.4rem;
+    height: 2.2rem;
     width: 14vw;
-    display: flex;
-    justify-content: space-around;
 }
-
 .img-social a *{
     height: 100%;
     border-radius: 0.5em;
     background-color: white;
-
-
+}
+.about{
+    padding-top: 3rem;
 }
 
-#containerAbout{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: rgb(15, 10, 15);
-}
+.img-father{
+    width: 18rem;
 
-.option{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+}
+.icon-interes{
+    width: 3rem;
+    background-color: rgba(255, 255, 255, 0.525);
+    padding: 8px;
+    border-radius: 50%;
 }
