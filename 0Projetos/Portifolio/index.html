@@ -10,17 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="level.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
 
 </head>
 <body>
-    <header class="d-flex align-items-center justify-content-around bg-dark text-white pb-2">
-        <h2>Gabriel</h2>
+    <header class="d-flex align-items-center justify-content-around bg-dark text-white p-2 align-items-center">
+        <h2 class="d-sm-inline d-none">Gabriel</h2>
         <nav>
             <ul>
-                <li><a target="_blank">home</a></li>
-                <li><a target="_blank">about</a></li>
-                <li><a target="_blank">skills</a></li>
-                <li><a target="_blank">projects</a></li>
+                <li><a class="text-decoration-none text-light" href="#">home</a></li>
+                <li><a class="text-decoration-none text-light" href="#about">about</a></li>
+                <li><a class="text-decoration-none text-light" href="#tech">skills</a></li>
+                <li><a class="text-decoration-none text-light" href="#projects">projects</a></li>
             </ul>
         </nav>
         <div id="black-or-white">
@@ -28,12 +31,12 @@
         </div>
     </header>    
     <main>
-        <div class="containerBasicImg d-flex flex-column text-white pt-2 pb-3">
+        <div class="containerBasicImg d-flex flex-column text-white">
             <div class="containerBasic d-flex flex-column align-items-center p4">
                 <img>
                 <h1>Gabriel Matos Antiqueira</h1>
                 <p>Software Developer</p>
-                <div class="img-social d-flex justify-content-around">
+                <div id="about" class="img-social d-flex justify-content-around">
                     <a target="_blank" href="https://www.instagram.com/gabzmatz/"><img src="images/insta.png" alt="Instagram"></a>
                     <a target="_blank" href="https://www.linkedin.com/in/gabrielmatosdev/"><img src="images/linkdin.png" alt="LinkeDln"></a>
                     <a target="_blank" href="https://github.com/GabzMatz"><img src="images/github.png" alt="Github"></a>
@@ -45,11 +48,11 @@
                 <h1>About me:</h1>
                 <p>Texto sobre mim</p>
             </article>
-            <div class="option d-flex w-100 justify-content-evenly">
+            <div class="option d-flex flex-column flex-sm-row w-100 justify-content-evenly">
                 <article>
-                    <h3 class="d-flex flex-column align-items-start">Details :</h3>
+                    <h3 class="d-flex flex-column align-items-center align-items-sm-start">Details:</h3>
                     <div>
-                        <ul class="list-unstyled d-flex flex-column align-items-start">
+                        <ul class="list-unstyled d-flex flex-column align-items-center align-items-sm-start">
                             <li>08.01.2003</li>
                             <li>+55 (11)97577-8909</li>
                             <li>gabriel.antiqueira8@gmail.com</li>
@@ -57,8 +60,8 @@
                     </div>
                 </article>
                 <article>
-                    <h3>My interests</h3>
-                    <div class="p-2 d-flex img-father justify-content-evenly">
+                    <h3>My interests:</h3>
+                    <div class="p-2 d-flex flex-row img-father justify-content-sm-evenly justify-content-center gap-2 w-100 mb-2">
                         <img class="icon-interes" src="images/game.png" alt="">
                         <img class="icon-interes" src="images/books.png" alt="">
                         <img class="icon-interes" src="images/gym.png" alt="">
@@ -66,49 +69,88 @@
                     </div>
                 </article>  
             </div>
-            <div class="button-cv">
+            <div id="tech" class="button-cv">
                 <button class="btn btn-dark fw-bold p-3 mb-5">Download CV</button>
             </div>
         </div>
-        <div class="containerSkills bg-da">
-            <h2>Tech Skills:</h2>
-                <div class="html">
-                    <img src="" alt="">
-                </div>
-                <div class="js">
-                    <img src="" alt="">
-                </div>
-                <div class="css">
-                    <img src="" alt="">
-                </div>
-                <div class="python">
-                    <img src="" alt="">
-                </div>
-                <div class="java">
-                    <img src="" alt="">
-                </div>
-                <div class="jQuerry">
-                    <img src="" alt="">
-                </div>
-                <div class="bootStrap">
-                    <img src="" alt="">
-                </div>
-                <div class="postGresSql">
-                    <img src="" alt="">
-                </div>
-        </div>
-        <div class="languages">
-            <h2>Languages:</h2>
-            <div>
-                <div class="portuguese">
-                    <p>Nativo</p>
-                </div>
-                <div class="english">
-                    <p>Intermediario/Avancado</p>
+        <div class="blackBar"></div>
+        <div class="bg-dark d-flex flex-row  p-5 justify-content-around">
+            <div class="containerSkills d-flex flex-column text-center">
+                <h2 class="text-light">Tech Skills:</h2>
+                        <div class="d-flex">
+                            <div class="html-panel">
+                                <img src="images/icons8-html-48.png" class="html" alt="">
+                                <div class="box-html bg-white rounded-3 d-flex d-none">
+                                    <p class="ps-2 fw-bold">Level:</p>
+                                    <div class="level-total"></div>
+                                    <div class="level-html"></div>
+                                </div>
+                            </div>
+                            <div class="css-panel">
+                                <img class="css" src="images/icons8-css-48.png" alt="">
+                                <div class="box-css bg-white rounded-3 d-flex d-none">
+                                    <p class="ps-2 fw-bold">Level:</p>
+                                    <div class="level-total"></div>
+                                    <div class="level-css"></div>
+                                </div>
+                            </div>
+                            <div class="js-panel">
+                                <img class="js" src="images/icons8-js-48.png" alt="">
+                                <div class="box-js bg-white rounded-3 d-flex d-none">
+                                    <p class="ps-2 fw-bold">Level:</p>
+                                    <div class="level-total"></div>
+                                    <div class="level-js"></div>
+                                </div>
+                            </div>
+                            <div class="python-panel">
+                                <img class="python" src="images/icons8-python-48.png" alt="">
+                                <div class="box-python bg-white rounded-3 d-flex d-none">
+                                    <p class="ps-2 fw-bold">Level:</p>
+                                    <div class="level-total"></div>
+                                    <div class="level-python"></div>
+                                </div>
+                            </div>
+                            <div class="java-panel">
+                                <img class="java" src="images/icons8-java-48.png" alt="">
+                                <div class="box-java bg-white rounded-3 d-flex d-none">
+                                    <p class="ps-2 fw-bold">Level:</p>
+                                    <div class="level-total"></div>
+                                    <div class="level-java"></div>
+                                </div>
+                            </div>
+                            <div class="bootStrap-panel">
+                                <img class="bootstrap" src="images/icons8-bootstrap-48.png" alt="">
+                                <div class="box-bootstrap bg-white rounded-3 d-flex d-none">
+                                    <p class="ps-2 fw-bold">Level:</p>
+                                    <div class="level-total"></div>
+                                    <div class="level-bootstrap"></div>
+                                </div>
+                            </div>
+                            <div class="postGresSql-panel">
+                                <img class="postGresSql" src="images/icons8-postgresql-48.png" alt="">
+                                <div class="box-postGresSql bg-white rounded-3 d-flex d-none">
+                                    <p class="ps-2 fw-bold">Level:</p>
+                                    <div class="level-total"></div>
+                                    <div class="level-postGresSql"></div>
+                                </div>
+                            </div>
+                    </div>
+            </div>
+            <div class="languages text-light d-flex flex-column text-center">
+                <h2 class="mb-4">Languages:</h2>
+                <div class="d-flex gap-5">
+                    <div class="english bg-dark p-2 rounded-4">
+                        <h4>English</h4>
+                        <p>Intermediario/Avancado</p>
+                    </div>
+                    <div class="spanish bg-dark p-2  rounded-4">
+                        <h4>Spanish</h4>
+                        <p>Basico</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="Projects">
+        <div id="projects">
             <div class="hashGame">
                 <img>
                 <h3>hashGame</h3>
@@ -127,8 +169,9 @@
                 <a href="" target="_blank">Click me!!</a>
             </div>
         </div>
-        <footer></footer>
+        <footer class="bg-dark vh-100"></footer>
     </main>
     <script src="script.js"></script>
+    <script src="levelTech.js"></script>
 </body>
 </html>

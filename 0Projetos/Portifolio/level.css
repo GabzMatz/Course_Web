@@ -1,0 +1,234 @@
+
+.box-html{
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+}
+@keyframes sizeLevelHtml {
+    0%{
+        width:2px;
+        background-color: red;
+    }
+    50%{
+        background-color: yellow;
+
+    }
+    100%{
+        width: 120px;
+        background-color: green;
+    }
+}
+.level-html{
+    animation-name:sizeLevelHtml;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    border-radius: 2em;
+    top:60%;
+    left:10%;
+    width:2px;
+    height: 10px;
+}
+
+
+.box-js{
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+}
+@keyframes sizeLevelJs {
+    0%{
+        width:2px;
+        background-color: red;
+    }
+    50%{
+        background-color: yellow;
+
+    }
+    100%{
+        width: 80px;
+        background-color: green;
+    }
+}
+.level-js{
+    animation-name:sizeLevelJs;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    border-radius: 2em;
+    top:60%;
+    left:10%;
+    width:2px;
+    height: 10px;
+}
+
+
+.box-css{
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+}
+@keyframes sizeLevelCss {
+    0%{
+        width:2px;
+        background-color: red;
+    }
+    50%{
+        background-color: yellow;
+
+    }
+    100%{
+        width: 100px;
+        background-color: green;
+    }
+}
+.level-css{
+    animation-name:sizeLevelCss;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    border-radius: 2em;
+    top:60%;
+    left:10%;
+    width:2px;
+    height: 10px;
+}
+
+
+
+.box-python{
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+}
+@keyframes sizeLevelPython {
+    0%{
+        width:2px;
+        background-color: red;
+    }
+    100%{
+        width: 70px;
+        background-color: yellow;
+    }
+}
+.level-python{
+    animation-name:sizeLevelPython;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    border-radius: 2em;
+    top:60%;
+    left:10%;
+    width:2px;
+    height: 10px;
+}
+
+
+
+
+.box-java{
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+}
+@keyframes sizeLevelJava {
+    0%{
+        width:2px;
+        background-color: red;
+    }
+    100%{
+        width: 85px;
+        background-color: yellow;
+    }
+}
+.level-java{
+    animation-name:sizeLevelJava;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    border-radius: 2em;
+    top:60%;
+    left:10%;
+    width:2px;
+    height: 10px;
+}
+
+
+
+.box-bootstrap{
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+}
+@keyframes sizeLevelBootstrap {
+    0%{
+        width:2px;
+        background-color: red;
+    }
+    50%{
+        background-color: yellow;
+
+    }
+    100%{
+        width: 100px;
+        background-color: green;
+    }
+}
+.level-bootstrap{
+    animation-name:sizeLevelBootstrap;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    border-radius: 2em;
+    top:60%;
+    left:10%;
+    width:2px;
+    height: 10px;
+}
+
+
+
+.box-postGresSql{
+    position: absolute;
+    width: 10rem;
+    height: 3rem;
+}
+@keyframes sizeLevelPostGresSql {
+    0%{
+        width:2px;
+        background-color: red;
+    }
+
+    100%{
+        width: 40px;
+        background-color: red;
+    }
+}
+.level-postGresSql{
+    animation-name:sizeLevelPostGresSql;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    position: absolute;
+    border-radius: 2em;
+    top:60%;
+    left:10%;
+    width:2px;
+    height: 10px;
+}
+
+.level-total{
+    position: absolute;
+    border-radius: 2em;
+    top:60%;
+    left:10%;
+    width:128px;
+    height: 10px;
+    background-color: rgba(128, 128, 128, 0.36);
+}
