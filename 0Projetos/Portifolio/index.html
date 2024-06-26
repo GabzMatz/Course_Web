@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="level.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -32,9 +35,9 @@
     </header>    
     <main>
         <div class="containerBasicImg d-flex flex-column text-white">
-            <div class="containerBasic d-flex flex-column align-items-center p4">
+            <div class="containerBasic d-flex flex-column align-items-center text-center p4">
                 <img>
-                <h1>Gabriel Matos Antiqueira</h1>
+                <h1 class="mb-4">Gabriel Matos Antiqueira</h1>
                 <p>Software Developer</p>
                 <div id="about" class="img-social d-flex justify-content-around">
                     <a target="_blank" href="https://www.instagram.com/gabzmatz/"><img src="images/insta.png" alt="Instagram"></a>
@@ -44,9 +47,10 @@
             </div>
         </div>
         <div class="about d-flex flex-column align-items-center text-center bg-dark text-light">
-            <article>
+            <article class="mb-5">
                 <h1>About me:</h1>
-                <p>Texto sobre mim</p>
+                <p class="container">Desde minha infância, sempre fui fascinado pela área de Tecnologia da Informação. Foi somente a partir deste ano, contudo, que resolvi dedicar-me inteiramente e com foco a este campo.</p>
+                <p class="container">No presente momento, encontro-me imerso nos estudos na Faculdade de Engenharia de Sorocaba (FACENS), onde curso Análise e Desenvolvimento de Sistemas.Estou me dedicando ao aprendizado de linguagens e habilidades técnicas como Java, as bases da Web (HTML, CSS, JavaScript), Linux, e inglês. Adicionalmente, possuo uma sólida compreensão dos princípios de versionamento de código utilizando git/github.</p>
             </article>
             <div class="option d-flex flex-column flex-sm-row w-100 justify-content-evenly">
                 <article>
@@ -70,14 +74,14 @@
                 </article>  
             </div>
             <div id="tech" class="button-cv">
-                <button class="btn btn-dark fw-bold p-3 mb-5">Download CV</button>
+                <button class="btn btn-dark fw-bold p-3 mb-5 mt-5 mt-sm-2">Download CV</button>
             </div>
         </div>
         <div class="blackBar"></div>
-        <div class="bg-dark d-flex flex-row  p-5 justify-content-around">
-            <div class="containerSkills d-flex flex-column text-center">
+        <div class="bg-dark d-flex flex-column flex-lg-row p-5 justify-content-around align-items-center">
+            <div class="containerSkills">
                 <h2 class="text-light">Tech Skills:</h2>
-                        <div class="d-flex">
+                        <div class="d-flex flex-column flex-md-row gap-3 gap-md-0 flex-wrap">
                             <div class="html-panel">
                                 <img src="images/icons8-html-48.png" class="html" alt="">
                                 <div class="box-html bg-white rounded-3 d-flex d-none">
@@ -136,16 +140,20 @@
                             </div>
                     </div>
             </div>
-            <div class="languages text-light d-flex flex-column text-center">
+            <div class="languages text-light d-flex flex-column text-center align-items-center mt-5 mt-lg-0">
                 <h2 class="mb-4">Languages:</h2>
                 <div class="d-flex gap-5">
                     <div class="english bg-dark p-2 rounded-4">
-                        <h4>English</h4>
-                        <p>Intermediario/Avancado</p>
+                        <img src="images/icons8-usa-48.png" alt="">
+                        <p>English</p>
+                        <div class="levelLanguages eua rounded-3 d-none">B2</div>
+                        <div class="lookEua"></div>
                     </div>
-                    <div class="spanish bg-dark p-2  rounded-4">
-                        <h4>Spanish</h4>
-                        <p>Basico</p>
+                    <div class="spanish bg-dark p-2 rounded-4">
+                        <img src="images/icons8-spain-flag-48.png" alt="bandeira-espanha">
+                        <p>Spanish</p>
+                        <div class="levelLanguages spain rounded-3 d-none">A2</div>
+                        <div class="lookSpain"></div>
                     </div>
                 </div>
             </div>
@@ -172,6 +180,8 @@
         <footer class="bg-dark vh-100"></footer>
     </main>
     <script src="script.js"></script>
-    <script src="levelTech.js"></script>
+    <script src="level.js"></script>
+    <script src="mobileEnhanceds.js"></script>
+
 </body>
 </html>

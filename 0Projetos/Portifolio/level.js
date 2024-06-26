@@ -114,3 +114,38 @@ levelPostGresSql.addEventListener("mouseout",()=>{
     })
     
 })
+
+let eua = document.querySelector(".lookEua")
+let euaContainer = document.querySelector(".eua")
+
+eua.addEventListener("mouseover",()=>{
+    $(".eua").fadeIn()
+    euaContainer.classList.remove("d-none")
+    
+})
+eua.addEventListener("mouseout",()=>{
+    $(".eua").fadeOut(100, ()=>{
+        euaContainer.classList.add("d-none")    
+    })
+    
+})
+
+
+
+
+let spain = document.querySelector(".lookSpain")
+let spainContainer = document.querySelector(".spain")
+
+
+spain.addEventListener("mouseover",()=>{
+    $(".spain").fadeIn()
+    spainContainer.classList.remove("d-none")
+    
+})
+spain.addEventListener("mouseout",()=>{
+    $(".spain").fadeOut(100, ()=>{
+        spainContainer.classList.add("d-none")    
+    })
+    
+})
+

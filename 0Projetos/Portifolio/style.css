@@ -7,6 +7,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+
+body{
+    background-image:url(images/anas-alshanti-feXpdV001o4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
 header h2{
     font-family: "Open Sans", sans-serif;
     background-image: linear-gradient(to right, #6d2d6a, #512250);
@@ -74,7 +81,6 @@ nav ul li{
 .containerBasicImg{
     padding-top: 5rem;
     padding-bottom: 2rem;
-    background-image: url(images/anas-alshanti-feXpdV001o4-unsplash.jpg);
     background-position: top;
     background-size: cover;
 }
@@ -83,6 +89,11 @@ nav ul li{
 }
 .containerBasic p{
     font-weight: 100;    
+}
+.containerBasic h1{
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 10px;
+    font-weight: 200;
 }
 .img-social{
     height: 2.2rem;
@@ -114,23 +125,28 @@ nav ul li{
     border-radius: 1em;
     background-image: linear-gradient(to right, #060306, rgb(27,12,26));
     border:2px solid #512250;
-
+    width: 380px;
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
-
 .languages{
     padding: 2.5rem;
     border-radius: 1em;
     background-image: linear-gradient(to right, #060306, rgb(27,12,26));
     border:2px solid #512250;
+    width: 380px;
+    height: 240px;
 
 }
 .blackBar{
     width: 100vw;
     height: 90px;
-    background-image: url(images/anas-alshanti-feXpdV001o4-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
+    background-image: linear-gradient(to right, #060306, rgb(36, 25, 35));
+    border: 1px solid black;
 }
 .spanish, .english{
+    position: relative;
     border:2px solid #512250;
 }
