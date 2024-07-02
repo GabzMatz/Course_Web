@@ -6,18 +6,19 @@ let watchId = null
 
 let currentRide = null
 startBtn.addEventListener("click",()=>{
-    if(watchId) 
-        return
+    if(watchId) return
+
 
     function handleSuccess(positon){
         addPosition(currentRide, positon)
-        console.log(positon)
         speedElement.innerHTML = positon.coords.speed ? 
         (positon.coords.speed * 3.6).toFixed(1): 0
     }
+
     function handleError(error){
         console.log(error)
     }
+    
     const options = {enableHighAccuracy : true}
     currentRide = createNewRide()    
     watchId = navigator.geolocation.watchPosition(handleSuccess,handleError, options)
@@ -32,6 +33,7 @@ stopBtn.addEventListener("click",()=>{
     navigator.geolocation.clearWatch(watchId)
     watchId = null
     updateStopTime(currentRide)
+    currentRide = null
     stopBtn.classList.add("d-none")
     startBtn.classList.remove("d-none")
 

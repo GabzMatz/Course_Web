@@ -9,6 +9,14 @@ function createNewRide(){
     saveRideRecord(rideId, rideRecord)
     return rideId
 }
+
+function getAllRides(){
+    return Object.entries(localStorage)
+
+}
+
+
+
 function getRideRecord(rideId){
     return JSON.parse(localStorage.getItem(rideId))
 }
@@ -17,18 +25,18 @@ function saveRideRecord(rideId,rideRecord){
 }
 
 function addPosition(rideId,positon){
-    
     const rideRecord = getRideRecord(rideId)
     const newData = {
-        accurancy:positon.coords.accurancy,
+        accuracy:positon.coords.accuracy,
         altitude:positon.coords.altitude,
-        altitudeAcurrancy:positon.coords.altitudeAcurrancy,
+        altitudeAccuracy:positon.coords.altitudeAccuracy,
         heading:positon.coords.heading,
         latitude:positon.coords.latitude,
-        longitutude:positon.coords.longitutude,
+        longitude:positon.coords.longitude,
         speed:positon.coords.speed,
         timestamp:positon.timestamp,
     }
+    console.log(positon.coords)
     rideRecord.data.push(newData)
     saveRideRecord(rideId,rideRecord)
 }
